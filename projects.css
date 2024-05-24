@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Rubik";
+    src: url(fonts/Rubik-VariableFont_wght.ttf) format("truetype");
+  }
+* {
+    margin: 0;
+    padding: 0;
+  }
+#projectsContainer {
+  width: 100%;
+  height: 50rem;
+}
+
+.tabsContainer {
+  width: 100%;
+  height: 4rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+.tablinks {
+  background-color:#20191f;    
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem 2rem 0.8rem;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  font-family: "Rubik";
+  font-weight: bold;
+  color: #DCDADD; 
+  border-radius: 1rem 1rem 0 0; 
+  margin-right: 1rem;
+  height: 2rem;
+}
+.tablinks:hover {
+  background-color: #1a1619;
+}
+.tablinks.active {
+  background-color: #2d1628;
+}
+.tabcontent {
+  margin-top: 0.3rem;
+  margin-left: 4rem;
+  display: none;
+  width: 100rem;
+  height: auto;
+  background-color: #2d1628;
+  border-radius: 1rem 1rem 1rem 1rem; 
+}
+
+/*CRAFT CAROUSEL*/
+#CraftsContent {
+  display: flex;
+  height: 30rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+#craftCarousel {
+  display: flex;
+  width : 100%;
+  height : 50rem;
+  overflow: hidden;
+}
+.craftImg {
+  width: 20rem;
+  height: auto;
+  clip-path: circle(50% at center);
+}
+.btn {
+  position: absolute;
+  background-color: #6C3850;
+  border: none;
+  outline: none;
+  font-size: 5rem;
+  color: #DCDADD;
+  width: 5rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; 
+  z-index: 2;
+  cursor: pointer;
+  top: 40%;
+  box-shadow: 0.5rem 0.5rem 5px #1410176b;
+}
+#previousBtnCraft {
+  left: 1rem;
+}
+#nextBtnCraft {
+  right: 4rem;
+}
+.craftsList {
+  top: 50%;
+  list-style: none;
+  border-radius: 80rem;
+  box-shadow: -0.5rem 0.5rem 5px #141017e0;
+  height: 20rem;
+  width: 20rem;
+  margin-left: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.craftsList:hover {
+  transform: scale(1.2);
+}
+.slide {
+  margin-top: 5rem;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.craftImg {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* GAMES DESCRIPTIONS*/
+#GamesContent {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 30rem;
+}
+.gameCard {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  background-color: #120f1583;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: -0.5rem 0.5rem 5px #1410176b;
+  align-items: center;
+}
+.gameDescr {
+  display: block;
+  margin: 3rem;
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  color: #DCDADD;
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+.gameDescription {
+  margin-bottom: 1rem;
+  display: block;
+  opacity: 0.7;
+}
+.gameImg {
+  width: 30rem;
+  height: 18rem;
+  border-radius: 0.5rem;
+  box-shadow: -0.5rem 0.5rem 5px #141017e0;
+}
+.gameImg:hover {
+  transform: scale(1.5) translateX(5rem);
+  z-index: 3;
+}
+.gameTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+/* CODE PROJECTS */
+#CodeContent {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 30rem;
+}
+.codeDescr {
+  display: block;
+  margin: 3rem;
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  color: #DCDADD;
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+.codeImg {
+  width: 20rem;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: -0.5rem 0.5rem 5px #141017e0;
+}
+.codeImg:hover {
+  transform: scale(1.5) translateX(5rem);
+  z-index: 3;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+     <meta charset="utf-8" name="viewport" content="width=device-width">
+     <title>Contact</title>
+    <link href="contact.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="scriptContact.js" defer></script>
+</head>
+
+
+<body>
+    
+    <div class="backgroundImg"></div>
+    <div class="backgroundColor"></div>
+    <div class="filter"></div>
+
+    <header> 
+        <div class="content">
+            <h2 class="text" data-text=".iA"></h2>
+        </div>
+    </header>
+    
+    <main>
+        <div class="navIcons"></div>
+        <div class="windowContainer">
+            <div class="window">
+                <div class="titleBar"></div>
+                <div class="contactContainer">
+                    <h1 id="contactTitle">Contact</h1>
+                    <form action="https://formspree.io/f/xoqgzwba" method="POST">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="on" required>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" autocomplete="on" required>
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" placeholder="Votre adresse mail" autocomplete="on" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" cols="60" name="message" placeholder="Votre message..." autocomplete="off" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </main>
+
+    <footer></footer>
+    
+    
+</body>
+</html>
+
+ 
+ 

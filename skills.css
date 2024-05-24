@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Rubik";
+    src: url(fonts/Rubik-VariableFont_wght.ttf) format("truetype");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+#skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110rem;
+    height: 47rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#skillsHeader {
+    display: flex;
+    width: 100rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+#skillsPp {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 3rem;
+}
+
+
+#skillsDetail {
+    width: 100rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.skillDetailContainer {
+    background-color: #dcdadd0a; 
+    border-radius: 1rem;
+    width: 27%;
+    height: 42rem;
+    margin: 3rem;
+    text-align: left;
+}
+h4 {
+    font-family: "Rubik";
+    color: #DCDADD;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+.skillDetailTitle {
+    font-family: "Rubik";
+    color: #DCDADD;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+h5 {
+    font-family: "Rubik";
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #DCDADD;
+    padding-left: 5%;
+    padding-bottom: 0.25rem;
+}
+.skillBar {
+    background-color: #DCDADD;
+    width: 20rem;
+    height: 1rem;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+.darkSkillBar {
+    background-color: #6C3850;
+    height: 100%;
+}
+#shortTextCode {
+    padding-top: 2rem;
+    font-family: "Rubik";
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #DCDADD;
+    text-align: center;
+}
+
+#historyDetail {
+    width : 100rem;
+    height: auto;
+    background-color: #dcdadd0a; 
+    border-radius: 1rem;
+}
+#historyBar {
+    width: 92rem;
+    height: 1rem;
+    background-color: #DCDADD;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    margin-bottom: 8rem;
+    display: flex;
+}
+#circlesDiv {
+    display: flex;
+    text-align: center;
+    width: 90rem;
+    height: auto;
+    margin-top: -2.25rem;
+}
+
+.circles {
+    display: flex;
+    background-color: #DCDADD;
+    border-radius: 10rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    animation: pulse 3s infinite alternate; 
+}
+.circles:hover {
+    background-color: #6C3850;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.25); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+h6 {
+    font-size: 1rem;
+    font-family: "Rubik";
+    font-weight: 100;
+    color: #DCDADD;
+    opacity: 0.5;
+}
+/* HOVER EFFECT */
+.descriptionDates{
+    position: absolute;
+    display: flex;
+    height: auto;
+    background-color: #6C3850;
+    border-radius: 0.5rem;
+    box-shadow: -1rem 1rem 5px #1410176b;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Rubik";
+    font-weight: 300;
+    color: #DCDADD;  
+    visibility: hidden;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    padding: 0.5rem;
+}
+
+#hobbiesDetail {
+    width : 100rem;
+    height: 50rem;
+    background-color: #dcdadd0a; 
+    border-radius: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#hobbiesDetail img{
+    width: 10rem;
+    height: 10rem;
+}
+#hobbiesIconsContainer {
+    display: flex;
+    width: 80rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+}
+#hobbyDescription {
+    font-family: "Rubik";
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #DCDADD;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+/* POSITIONNEMENT CERCLES DATES */
+#circleInfoContainer0 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer0:hover #dateDescription0 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-10rem);
+    opacity: 1;
+    width: 20rem;
+}
+#circleInfoContainer1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer1:hover #dateDescription1 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-10rem);
+    opacity: 1;
+    width: 20rem;
+}
+#circleInfoContainer2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer2:hover #dateDescription2 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-12rem);
+    opacity: 1;
+    width: 35rem;
+}
+#circleInfoContainer3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer3:hover #dateDescription3 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-12rem);
+    opacity: 1;
+    width: 35rem;
+}
+#circleInfoContainer4 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer4:hover #dateDescription4 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-15rem);
+    opacity: 1;
+    width: 45rem;
+}
+#circleInfoContainer5 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer5:hover #dateDescription5 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-17rem);
+    opacity: 1;
+    width: 45rem;
+}
+#circleInfoContainer6 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer6:hover #dateDescription6 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-13rem);
+    opacity: 1;
+    width: 45rem;
+}
+#circleInfoContainer7 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    width: 10rem;
+    height: 20rem;
+}
+#circleInfoContainer7:hover #dateDescription7 {
+    position: relative;
+    visibility: visible;
+    transform: translateY(-12rem);
+    opacity: 1;
+    width: 45rem;
+}
