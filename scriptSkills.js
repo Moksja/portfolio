@@ -146,7 +146,7 @@ function skillsDetail() {
     let skillsTitles = [
         "Code",
         "Outils",
-        "Skills"
+        "Savoir-être"
     ];
 
     let skillDetailContainers = document.querySelectorAll(".skillDetailContainer");
