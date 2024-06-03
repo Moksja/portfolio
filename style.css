@@ -164,6 +164,23 @@ p {
   margin-top: 2rem;
 }
 
+#nextButton {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  animation: pulse 3s infinite alternate;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
 
 /* ANIMATION IA */
 .content{
