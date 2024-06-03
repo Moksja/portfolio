@@ -127,11 +127,11 @@ function addWindowContent() {
     complementaryText.id = "complementaryText";
 }
 let headerContent = "Ioana Acu, Développeuse Full-Stack Junior";
-let subHeaderContent = "En recherche d'alternance (Développeur-euse web et web mobile, Simplon) - Sept. 2024 à Sept. 2025 - 3semaines/mois - Simplon";
+let subHeaderContent = "En recherche d'alternance - Sept. 2024 à Sept. 2025 - 3semaines/mois - Simplon";
 let about1 = "En découvrant la programmation, j’ai apprécié  les défis propres à la logique algorithmique, mais aussi la possibilité d’y réinvestir mes compétences.";
 let about2 = "Autonome, rigoureuse et passionnée de résolution de problèmes, j’ai hâte de découvrir ce métier.";
 let about3 = "C'est à la Compagnie du Code que j'ai découvert la programmation, en animant des ateliers d'initiation au code via des outils ludiques de programmation par blocs. En faisant découvrir aux jeunes l'algorithmie et les métiers du numérique, j'ai moi-même eu envie d'évoluer dans univers.";
-let about4 = "Lors de mes deux précédentes formations en Swift (Apple Fundation Program, chez Simplon), cet intérêt pour le code s'est renforcé. J'ai aimé les défis que ces sessions m'ont proposés, et la gymnastique mentale attendue. J'ai également été heureuse de voir que mes connaissances en graphisme et en gestion de projet m'ont été utiles.";
+let about4 = "Lors de mes deux formation en Swift (Apple Fundation Program, chez Simplon), cet intérêt pour le code s'est renforcé. J'ai aimé les défis que ces sessions m'ont proposés, et la gymnastique mentale attendue. J'ai également été heureuse de voir que mes connaissances en graphisme et en gestion de projet m'ont été utiles.";
 let about5 = "Aujourd'hui, je suis à la recherche d'une alternance afin de continuer à développer mes compétences dans un contexte professionnel. Autonome dans mon apprentissage, et forte de mes précédentes expériences dans l'ingénierie pédagogique et la gestion de projet, je pense être en mesure de rapidement intégrer une équipe de développeur et développeuses.";     
 
 //EFFETS TXT
@@ -143,16 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         writeP1();
         setTimeout(() => {
-           writeP2();
-           setTimeout(() => {
-            writeP3(); 
-            setTimeout(() => {
-                writeP4(); 
-                setTimeout(() => {
-                    writeP5(); 
-                 }, 5500); 
-             }, 5000); 
-         }, 3000); 
+           writeP2(); 
         }, 2500);
     }, 1800);
 });
@@ -271,6 +262,30 @@ function writeP2() {
 
         iteration += 1 / 3;
     }, 5);
+
+    let button = "images/others/nextButton.png";
+    let img = document.createElement("img");
+    let container = document.getElementsByClassName("aboutTextContainer")[0];
+
+    setTimeout(() => {
+        container.appendChild(img);
+        img.src = button;
+        img.id = "nextButton";
+
+        img.addEventListener("click", function() {
+            img.style.display = "none";
+            writeP3();
+            setTimeout(() => { 
+                setTimeout(() => {
+                    writeP4(); 
+                    setTimeout(() => {
+                        writeP5(); 
+                    }, 5500); 
+                }, 2500); 
+            }, 2000);
+        });
+    }, 2000);
+    
 }
 function writeP3() {
     let p1 = document.getElementById("p1");
