@@ -606,10 +606,9 @@ function addCodeDescription() {
 
     let container4 = document.querySelector("#codeDescr3");
     let descriptions4 = [
-        "Jeu de rapidité - En cours de programmation", 
-        "Petit jeu dont l'objectif est de retrouver les 3 chatons parmi tous ceux à l'écran. ",
-        "La grille de chat est randomisée à partir d'une liste plus grande. Quand on clique sur un chaton, s'il est parmi ceux à retrouver, il disparaît et on gagne des points, sinon, on en perd et il reste affiché. Il y a également un chronomètre.",
-        "À rajouter : On gagne les points restants au chronomètre lorsqu'on a trouvé les 3 chatons. Il manque également un menu, des écrans de victoire/défaite et un meilleur design global. Idéalement, je voudrais implémenter plusieurs niveaux de difficulté."
+        "Quel chaton es-tu aujourd'hui ?",
+        "Programme d'entraînement : Randomization.", 
+        "C'est mon premier programme avec JavaScript. À chaque itération, l'algorithme choisit un objet au hasard."
     ] 
     descriptions4.forEach(description => {
         let desc = document.createElement("div");
@@ -620,9 +619,7 @@ function addCodeDescription() {
 
     let container5 = document.querySelector("#codeDescr4");
     let descriptions5 = [
-       "Quel chaton es-tu aujourd'hui ?",
-        "Programme d'entraînement : Randomization.", 
-        "C'est mon premier programme avec JavaScript. À chaque itération, l'algorithme choisit un objet au hasard."
+       "Un jeu d'ambiance en ligne, conçu avec un ami pour nos proches. Sous forme de visual novel à choix multiples et divers mini-jeux."
 
     ] 
     descriptions5.forEach(description => {
