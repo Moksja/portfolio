@@ -516,10 +516,11 @@ class CodeProject {
     }
 }
 let codeProjectsList = [
-    new CodeProject("images/codes/neko.png", "Neko Sagashi", "https://moksja.github.io/nekoSagashi/"),
-    new CodeProject("images/codes/portfolio.png", "Portfolio",""),
-    new CodeProject("images/codes/animal/animal2.png", "Animal Totem", "https://moksja.github.io/animaltotem/"),
+    new CodeProject("images/codes/css.png", "Entraînement CSS", "https://moksja.github.io/css-menus/#"),
     new CodeProject("images/codes/chatons.png", "Chaton Totem", "https://moksja.github.io/catotem/index.html"),
+    new CodeProject("images/codes/animal/animal2.png", "Animal Totem", "https://moksja.github.io/animaltotem/"),
+    new CodeProject("images/codes/portfolio.png", "Portfolio",""),
+    new CodeProject("images/codes/neko.png", "Neko Sagashi", "https://moksja.github.io/nekosagashi/"),
     new CodeProject("images/games/avenir/avenir1.png", "À venir", "")
 ]
 function addCodeCard() {
@@ -566,10 +567,9 @@ function addCodeCard() {
 function addCodeDescription() {
     let container1 = document.getElementById("codeDescr0");
     let descriptions1 = [
-        "Jeu de rapidité - En cours de programmation", 
-        "Petit jeu dont l'objectif est de retrouver les 3 chatons parmi tous ceux à l'écran. ",
-        "La grille de chat est randomisée à partir d'une liste plus grande. Quand on clique sur un chaton, s'il est parmi ceux à retrouver, il disparaît et on gagne des points, sinon, on en perd et il reste affiché. Il y a également un chronomètre.",
-        "À rajouter : Plusieurs niveaux de difficulté ; Scènes animées de début et fin de manche."
+        "Responsive CSS",
+        "Petits exercices pour m'améliorer avec CSS et tester plusieurs fonctionnalités.", 
+        "En cours."
     ] 
     descriptions1.forEach(description => {
         let desc = document.createElement("div");
@@ -577,10 +577,11 @@ function addCodeDescription() {
         desc.innerText = description;
         desc.className = "gameDescription";
     });
-
-    let container2 = document.querySelector("#codeDescr1");
+    let container2 = document.getElementById("codeDescr1");
     let descriptions2 = [
-        "Site conçu en ~1semaine, avec pour objectif de montrer mon envie d'apprendre et ma capacité à être autonome."
+        "Quel chaton es-tu aujourd'hui ?",
+        "Programme d'entraînement : Randomization.", 
+        "C'est mon premier programme. À chaque itération, l'algorithme choisit un objet au hasard."
     ] 
     descriptions2.forEach(description => {
         let desc = document.createElement("div");
@@ -594,8 +595,7 @@ function addCodeDescription() {
         "Quel est ton animal totem ?", 
         "Programme de reconnaissance d'images reposant sur l'utilisation de Teachable Machine. ",
         "J'ai entraîné le programme avec 5 animaux, et via la caméra, l'algorithme choisit celui qui nous ressemble le plus, notre totem.",
-        "Le traitement de l'image prend un peu de temps, et la classe Axolot semble sortir plus souvent, c'est sans doute dû à l'apparence des autres animaux choisis, plus difficiles à retrouver dans les visages humains."
-
+        "Le traitement de l'image prend un peu de temps, et la classe Axolot semble sortir plus souvent, c'est sans doute dû à l'apparence des animaux choisis, difficile à retrouver dans les visages humains."
     ] 
     descriptions3.forEach(description => {
         let desc = document.createElement("div");
@@ -606,9 +606,7 @@ function addCodeDescription() {
 
     let container4 = document.querySelector("#codeDescr3");
     let descriptions4 = [
-        "Quel chaton es-tu aujourd'hui ?",
-        "Programme d'entraînement : Randomization.", 
-        "C'est mon premier programme avec JavaScript. À chaque itération, l'algorithme choisit un objet au hasard."
+        "Site conçu en ~1semaine, avec pour objectif de montrer mon envie d'apprendre et ma capacité à être autonome."
     ] 
     descriptions4.forEach(description => {
         let desc = document.createElement("div");
@@ -619,12 +617,25 @@ function addCodeDescription() {
 
     let container5 = document.querySelector("#codeDescr4");
     let descriptions5 = [
-       "Un jeu d'ambiance en ligne, conçu avec un ami pour nos proches. Sous forme de visual novel à choix multiples et divers mini-jeux."
-
+        "Jeu de rapidité - En cours de programmation", 
+        "Petit jeu dont l'objectif est de retrouver les 3 chatons parmi tous ceux à l'écran. ",
+        "La grille de chat est randomisée à partir d'une liste plus grande. Quand on clique sur un chaton, s'il est parmi ceux à retrouver, il disparaît et on gagne des points, sinon, on en perd et il reste affiché. Il y a également un chronomètre.",
+        "À rajouter : On gagne les points restants au chronomètre lorsqu'on a trouvé les 3 chatons. Il manque également un menu, des écrans de victoire/défaite et un meilleur design global. Idéalement, je voudrais implémenter plusieurs niveaux de difficulté."
     ] 
     descriptions5.forEach(description => {
         let desc = document.createElement("div");
         container5.appendChild(desc);
+        desc.innerText = description;
+        desc.className = "gameDescription";
+    });
+
+    let container6 = document.querySelector("#codeDescr5");
+    let descriptions6 = [
+        "Un jeu d'ambiance en ligne, conçu avec un ami pour nos proches. Sous forme de visual novel à choix multiples et divers mini-jeux."
+    ] 
+    descriptions6.forEach(description => {
+        let desc = document.createElement("div");
+        container6.appendChild(desc);
         desc.innerText = description;
         desc.className = "gameDescription";
     });
