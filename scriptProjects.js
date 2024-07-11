@@ -517,7 +517,7 @@ class CodeProject {
 }
 let codeProjectsList = [
     new CodeProject("images/codes/css.png", "Entraînement CSS", "https://moksja.github.io/css-menus/#"),
-    new CodeProject("images/codes/neko.png", "Neko Sagashi", "https://moksja.github.io/nekosagashi/"),
+    new CodeProject("images/codes/neko.png", "Neko Sagashi", "https://moksja.github.io/nekoSagashi/"),
     new CodeProject("images/codes/chatons.png", "Chaton Totem", "https://moksja.github.io/catotem/index.html"),
     new CodeProject("images/codes/animal/animal2.png", "Animal Totem", "https://moksja.github.io/animaltotem/"),
     new CodeProject("images/codes/portfolio.png", "Portfolio",""),
