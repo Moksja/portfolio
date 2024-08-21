@@ -592,7 +592,7 @@ function addCodeDescription() {
     
     let container3 = document.getElementById("codeDescr2");
     let descriptions3 = [
-        "Jeu de rapidité, 
+        "Jeu de rapidité", 
         "Petit jeu dont l'objectif est de retrouver les 3 chatons parmi tous ceux à l'écran. ",
         "La grille de chat est randomisée à partir d'une liste plus grande. Quand on clique sur un chaton, s'il est parmi ceux à retrouver, il disparaît et on gagne des points, sinon, on en perd et il reste affiché. Il y a également un chronomètre.",
         "À rajouter : On gagne les points restants au chronomètre lorsqu'on a trouvé les 3 chatons. Il manque également un menu, des écrans de victoire/défaite et un meilleur design global. Idéalement, je voudrais implémenter plusieurs niveaux de difficulté."
