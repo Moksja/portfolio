@@ -516,9 +516,9 @@ class CodeProject {
     }
 }
 let codeProjectsList = [
+    new CodeProject("images/codes/datas.png", "Mise en forme de Données", "https://moksja.github.io/fle-ludique/"),
     new CodeProject("images/codes/css.png", "Entraînement CSS", "https://moksja.github.io/css-menus/#"),
     new CodeProject("images/codes/neko.png", "Neko Sagashi", "https://moksja.github.io/nekoSagashi/"),
-    new CodeProject("images/codes/chatons.png", "Chaton Totem", "https://moksja.github.io/catotem/index.html"),
     new CodeProject("images/codes/animal/animal2.png", "Animal Totem", "https://moksja.github.io/animaltotem/"),
     new CodeProject("images/codes/portfolio.png", "Portfolio",""),
     new CodeProject("images/games/avenir/avenir1.png", "À venir", "")
@@ -567,8 +567,8 @@ function addCodeCard() {
 function addCodeDescription() {
     let container1 = document.getElementById("codeDescr0");
     let descriptions1 = [
-        "Responsive CSS",
-        "Petits exercices pour m'améliorer avec CSS et tester plusieurs fonctionnalités.", 
+        "Entraînement à la modélisation 2D de données et informations.",
+        "Les grpahiques ont été programmés avec Chart.js", 
         "En cours."
     ] 
     descriptions1.forEach(description => {
@@ -580,10 +580,8 @@ function addCodeDescription() {
 
     let container2 = document.querySelector("#codeDescr1");
     let descriptions2 = [
-        "Jeu de rapidité - En cours de programmation", 
-        "Petit jeu dont l'objectif est de retrouver les 3 chatons parmi tous ceux à l'écran. ",
-        "La grille de chat est randomisée à partir d'une liste plus grande. Quand on clique sur un chaton, s'il est parmi ceux à retrouver, il disparaît et on gagne des points, sinon, on en perd et il reste affiché. Il y a également un chronomètre.",
-        "À rajouter : On gagne les points restants au chronomètre lorsqu'on a trouvé les 3 chatons. Il manque également un menu, des écrans de victoire/défaite et un meilleur design global. Idéalement, je voudrais implémenter plusieurs niveaux de difficulté."
+        "Menus CSS",
+        "Petits exercices pour m'améliorer avec CSS et tester plusieurs fonctionnalités."
     ] 
     descriptions2.forEach(description => {
         let desc = document.createElement("div");
@@ -594,9 +592,10 @@ function addCodeDescription() {
     
     let container3 = document.getElementById("codeDescr2");
     let descriptions3 = [
-        "Quel chaton es-tu aujourd'hui ?",
-        "Programme d'entraînement : Randomization.", 
-        "C'est mon premier programme. À chaque itération, l'algorithme choisit un objet au hasard."
+        "Jeu de rapidité, 
+        "Petit jeu dont l'objectif est de retrouver les 3 chatons parmi tous ceux à l'écran. ",
+        "La grille de chat est randomisée à partir d'une liste plus grande. Quand on clique sur un chaton, s'il est parmi ceux à retrouver, il disparaît et on gagne des points, sinon, on en perd et il reste affiché. Il y a également un chronomètre.",
+        "À rajouter : On gagne les points restants au chronomètre lorsqu'on a trouvé les 3 chatons. Il manque également un menu, des écrans de victoire/défaite et un meilleur design global. Idéalement, je voudrais implémenter plusieurs niveaux de difficulté."
     ] 
     descriptions3.forEach(description => {
         let desc = document.createElement("div");
