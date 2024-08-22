@@ -568,7 +568,7 @@ function addCodeDescription() {
     let container1 = document.getElementById("codeDescr0");
     let descriptions1 = [
         "Entraînement à la modélisation 2D de données et informations.",
-        "Les grpahiques ont été programmés avec Chart.js", 
+        "Les graphiques ont été programmés avec Chart.js", 
         "En cours."
     ] 
     descriptions1.forEach(description => {
